@@ -1,7 +1,5 @@
 # Prompt Framework + LLM Evaluation Harness
 
-> **Candidate:** [Moses Shenassa – Prompt Engineering Portfolio](https://www.linkedin.com/in/moses-shenassa-750105191)
-
 ## Executive Summary
 
 Modern LLM applications often rely on ad‑hoc prompts that are **not evaluated, not versioned, and not monitored**. As models change, prompts silently drift, hallucination rates creep up, and product teams lose confidence in AI behavior.
@@ -31,7 +29,7 @@ This project shows how to:
 - Build a **reusable evaluation harness** for tasks like classification, summarization, and information extraction.
 - Quantify **hallucination reduction**, **model drift**, and **structured output adherence** with numeric metrics.
 
-Keywords and themes for hiring managers and recruiters:
+Keywords and themes for this project:
 
 - **Prompt Engineering**, **LLM Evaluation**, **Hallucination Reduction**, **Model Drift Monitoring**  
 - **Human‑in‑the‑Loop**, **Structured Output Schema**, **Guardrail Prompts**, **AI Safety**
