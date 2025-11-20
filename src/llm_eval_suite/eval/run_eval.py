@@ -99,7 +99,9 @@ def main(config_path: str) -> None:
                 weights=weights,
             )
 
-            safety = run_safety_checks(output_text)
+            combined_text = f"USER INPUT:\n{example['input']}\n\nMODEL OUTPUT:\n{llm_output}"
+	    safety = run_safety_checks(combined_text)
+
 
             row = {
                 "task_name": task_name,
