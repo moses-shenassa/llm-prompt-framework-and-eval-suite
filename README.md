@@ -357,25 +357,9 @@ This repository is intentionally scoped as a **clean, illustrative core**. Obvio
 - **Vector retrieval integration**: evaluate retrieval‑augmented generation (RAG) prompts and measure groundedness.
 - **CI pipeline**: GitHub Actions that run `pytest` + a small eval suite on each PR and block regressions.
 
-These are all directions a real team might take this codebase when integrating into production LLM workflows.
 
 ---
 
-## Repo Metadata (for GitHub UI)
-
-Suggestions when configuring the GitHub repo:
-
-- **Description:**  
-  `Prompt engineering framework + evaluation harness for LLM workflows (classification, summarization, extraction).`
-- **Topics / Tags:**  
-  `llm`, `prompt-engineering`, `evaluation`, `python`, `openai-api`, `anthropic`, `ai-safety`, `model-drift`, `hallucination-reduction`
-
-Also recommended:
-
-- Pin this repo in your GitHub profile as a hero project.
-- Create a `v1.0.0` release once the README, docs, and tests are in a good state.
-
----
 
 ## Project Structure
 
@@ -413,11 +397,6 @@ llm-prompt-framework-and-eval-suite/
     └── test_loaders.py
 ```
 
----
-
-## Candidate / Contact
-
-> **Candidate:** [Moses Shenassa – Prompt Engineering & LLM Evaluation](https://www.linkedin.com/in/moses-shenassa-750105191)
 
 This repository is part of a broader **LLM workflow + evaluation portfolio**, demonstrating:
 
