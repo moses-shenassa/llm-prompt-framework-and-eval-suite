@@ -1,0 +1,52 @@
+model:
+  provider: "openai"      # or "anthropic" if you prefer
+  name: "gpt-4.1"         # you can choose any valid model you have access to
+  temperature: 0.0
+
+
+tasks:
+  - name: classification
+    enabled: true
+    dataset_path: "data/datasets/classification_examples.jsonl"
+    gold_path: "data/gold_labels/classification_gold.jsonl"
+    prompt_template_path: "src/llm_eval_suite/prompts/base_classification_prompt.md"
+    few_shots_path: "src/llm_eval_suite/prompts/few_shot_examples/classification_few_shots.json"
+    schema_module: "llm_eval_suite.schemas.classification_schema"
+    schema_class: "ClassificationOutput"
+    scoring:
+      accuracy_weight: 0.5
+      structure_weight: 0.2
+      faithfulness_weight: 0.2
+      completeness_weight: 0.1
+
+  - name: summarization
+    enabled: true
+    dataset_path: "data/datasets/summarization_examples.jsonl"
+    gold_path: "data/gold_labels/summarization_gold.jsonl"
+    prompt_template_path: "src/llm_eval_suite/prompts/base_summarization_prompt.md"
+    few_shots_path: "src/llm_eval_suite/prompts/few_shot_examples/summarization_few_shots.json"
+    schema_module: "llm_eval_suite.schemas.summarization_schema"
+    schema_class: "SummarizationOutput"
+    scoring:
+      accuracy_weight: 0.3
+      structure_weight: 0.2
+      faithfulness_weight: 0.3
+      completeness_weight: 0.2
+
+  - name: extraction
+    enabled: true
+    dataset_path: "data/datasets/extraction_examples.jsonl"
+    gold_path: "data/gold_labels/extraction_gold.jsonl"
+    prompt_template_path: "src/llm_eval_suite/prompts/base_extraction_prompt.md"
+    few_shots_path: "src/llm_eval_suite/prompts/few_shot_examples/extraction_few_shots.json"
+    schema_module: "llm_eval_suite.schemas.extraction_schema"
+    schema_class: "ExtractionOutput"
+    scoring:
+      accuracy_weight: 0.3
+      structure_weight: 0.3
+      faithfulness_weight: 0.2
+      completeness_weight: 0.2
+
+output:
+  reports_dir: "reports"
+  run_name_prefix: "eval_run"

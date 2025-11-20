@@ -1,0 +1,26 @@
+[
+  {
+    "id": "cls-fs-1",
+    "allowed_labels": [
+      "toxic",
+      "non_toxic"
+    ],
+    "input": "I hope you have a great day!",
+    "output": {
+      "label": "non_toxic",
+      "confidence": 0.98
+    }
+  },
+  {
+    "id": "cls-fs-2",
+    "allowed_labels": [
+      "toxic",
+      "non_toxic"
+    ],
+    "input": "You are the worst, I hate you.",
+    "output": {
+      "label": "toxic",
+      "confidence": 0.95
+    }
+  }
+]

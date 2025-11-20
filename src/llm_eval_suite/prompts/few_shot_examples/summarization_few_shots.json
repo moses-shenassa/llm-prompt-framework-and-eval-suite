@@ -1,0 +1,16 @@
+[
+  {
+    "id": "sum-fs-1",
+    "input": "The patient reports a mild headache for the last two days but denies nausea or vision changes.",
+    "output": {
+      "summary": "The patient has had a mild headache for two days without nausea or vision problems.",
+      "reading_level": "adult",
+      "key_points": [
+        "Mild headache",
+        "Duration: two days",
+        "No nausea",
+        "No vision changes"
+      ]
+    }
+  }
+]

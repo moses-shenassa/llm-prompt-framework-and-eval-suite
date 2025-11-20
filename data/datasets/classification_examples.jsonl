@@ -1,0 +1,2 @@
+{"id": "cls-1", "input": "I can't believe how stupid you are.", "allowed_labels": ["toxic", "non_toxic"]}
+{"id": "cls-2", "input": "Thanks again for your help yesterday, I really appreciate it.", "allowed_labels": ["toxic", "non_toxic"]}

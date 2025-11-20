@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ext-fs-1",
+    "input": "John Smith, a 45-year-old man from Denver, reports hypertension and takes lisinopril.",
+    "output": {
+      "name": "John Smith",
+      "age": 45,
+      "location": "Denver",
+      "conditions": [
+        "hypertension"
+      ],
+      "medications": [
+        "lisinopril"
+      ]
+    }
+  }
+]

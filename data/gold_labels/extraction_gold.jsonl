@@ -1,0 +1,2 @@
+{"id": "ext-1", "name": "Maria Lopez", "age": 52, "location": "Boulder", "conditions": ["type 2 diabetes", "hypertension"], "medications": ["metformin", "amlodipine"]}
+{"id": "ext-2", "name": null, "age": null, "location": "Chicago", "conditions": ["headaches"], "medications": ["ibuprofen"]}

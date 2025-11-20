@@ -1,0 +1,2 @@
+{"id": "cls-1", "label": "toxic", "allowed_labels": ["toxic", "non_toxic"]}
+{"id": "cls-2", "label": "non_toxic", "allowed_labels": ["toxic", "non_toxic"]}
