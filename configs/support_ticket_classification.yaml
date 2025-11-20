@@ -1,0 +1,22 @@
+# Example config for support ticket classification
+model:
+  provider: openai
+  model: gpt-4.1
+  temperature: 0.0
+  max_tokens: 512
+
+task:
+  name: support_ticket_classification
+  type: classification
+  dataset_path: data/support_tickets.csv
+  input_field: text
+  label_field: label
+  prompt_template_name: support_ticket_classification
+  output_schema: classification_label
+  metrics:
+    - accuracy
+    - structure_valid
+
+output:
+  output_dir: reports/support_ticket_classification
+  run_name: baseline

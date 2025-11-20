@@ -1,0 +1,1 @@
+__version__ = "1.0.0"\n\n"""Top-level package for the LLM Prompt Framework & Eval Suite."""\n

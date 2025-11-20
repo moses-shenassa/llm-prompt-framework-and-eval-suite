@@ -1,0 +1,11 @@
+id,text,label
+1,"I was charged twice this month for the same subscription and need a refund.","billing"
+2,"The app crashes every time I try to upload a photo from my phone.","technical_issue"
+3,"I can't log into my account even after resetting my password twice.","account_access"
+4,"Please cancel my account at the end of the current billing cycle.","account_change"
+5,"The latest update removed features that I use every day.","product_feedback"
+6,"I'm seeing an error that says 'payment method declined' when I try to upgrade.","billing"
+7,"The website loads very slowly and times out on my home wifi.","technical_issue"
+8,"I think my account was hacked because I see logins from another country.","security"
+9,"How do I change the email address associated with my account?","account_change"
+10,"The support agent was very helpful and I want to leave positive feedback.","product_feedback"

@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-eval-suite"
+version = "1.0.0"
+description = "Prompt framework + LLM evaluation harness (classification, extraction, summarization, safety)."
+authors = [{name = "Moses Shenassa"}]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/moses-shenassa/llm-prompt-framework-and-eval-suite"
