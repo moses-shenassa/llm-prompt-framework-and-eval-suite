@@ -1,1 +1,4 @@
-task_name,example_id,accuracy,structure,faithfulness,completeness,overall
+task_name,example_id,accuracy,structure,faithfulness,completeness,overall,parse_error,safety_violation
+classification,cls-1,1.0,1.0,0.95,1.0,0.99,,False
+summarization,sum-1,0.82,1.0,0.88,0.76,0.83,,False
+extraction,ext-1,0.87,1.0,0.93,0.84,0.89,,False

@@ -1,15 +1,25 @@
 # Prompt Design
 
-Each task has:
+Each task in this project is backed by an explicit prompt template and schema.
 
-- A **base prompt** in `src/llm_eval_suite/prompts/` that defines:
-  - The task (classification, summarization, extraction).
-  - The required JSON output schema.
-  - Guardrail instructions (no extra commentary, no speculation, etc.).
+## Components
 
-- **Few-shot examples** in `src/llm_eval_suite/prompts/few_shot_examples/`:
-  - Simple (input, output) pairs that demonstrate the desired behavior.
-  - These can be plugged into prompts or used in separate evaluation tasks.
+1. **Base Prompt Template** (Markdown)
+   - Describes the task (classification, summarization, extraction).
+   - Specifies the required JSON output structure.
+   - Includes guardrail instructions (no speculation, no extra commentary, etc.).
 
-- A **Pydantic schema** in `src/llm_eval_suite/schemas/`:
-  - Used to validate that the model output conforms to the expected structure.
+2. **Few-shot Examples** (JSON)
+   - Simple `(input, output)` pairs stored in `prompts/few_shot_examples/*.json`.
+   - Can be embedded into prompts or used to sanity check behavior.
+
+3. **Pydantic Schema**
+   - Defines the structured output expected from the LLM.
+   - Parsed and validated at evaluation time.
+   - Allows us to treat malformed outputs as explicit failures.
+
+## Goals
+
+- Make prompt contracts **explicit and enforceable**.
+- Encourage **structured outputs** over free-form text.
+- Provide a stable foundation for **prompt iteration and regression testing**.

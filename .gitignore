@@ -20,14 +20,19 @@ env/
 
 # OS
 .DS_Store
+Thumbs.db
 
 # Local environment
 .env
 .env.*
 
-# Reports (you may choose to commit samples)
+# Logs and reports
+logs/
 reports/*.csv
 reports/*.html
 reports/*.md
 !reports/README.md
 !reports/samples/**
+
+# Jupyter
+.ipynb_checkpoints/
